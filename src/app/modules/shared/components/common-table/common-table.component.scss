@@ -1,0 +1,53 @@
+@use "../../../../../scss/global";
+::ng-deep.mat-table {
+  width: 100%;
+  box-shadow: none;
+  border-left: 1px solid global.$Blueberry;
+  border-right: 1px solid global.$Blueberry;
+  border-top: 1px solid global.$Blueberry;
+}
+
+th {
+  background-color: global.$Alice_Blue;
+  border-bottom: 1px solid global.$Blueberry;
+}
+.mat-header-cell {
+  text-align: center;
+  color: global.$Blueberry;
+}
+.mat-cell {
+  border-bottom: 1px solid global.$Blueberry;
+  text-align: center;
+  color: global.$Blueberry;
+}
+
+::ng-deep .mat-paginator-page-size {
+  display: none !important;
+}
+
+::ng-deep .mat-paginator-range-label {
+  display: none !important;
+}
+
+::ng-deep .mat-paginator-range-actions {
+  gap: 2em;
+  color: global.$Blueberry;
+  margin-top: 10px;
+}
+
+::ng-deep .mat-icon-button {
+  --size: 20px;
+  width: var(--size);
+  height: var(--size);
+  line-height: 0;
+  font-size: 13px;
+  background-color: global.$Alice_Blue;
+  border-radius: 0.4em !important;
+  box-shadow: none;
+  margin: 0 0 0 4px !important;
+
+  &.mat-custom-page[disabled="disabled"] {
+    font-weight: bold;
+    font-size: 14px;
+  }
+}

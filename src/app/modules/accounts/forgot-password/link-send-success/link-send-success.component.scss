@@ -1,0 +1,32 @@
+@use "../../../../../scss/global";
+.forgot-password-container {
+  mat-card {
+    @include global.mat-card-reset;
+    padding: 0 15% 0 15%;
+    background: global.$Arsenic;
+    .title {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      line-height: 3em;
+      mat-card-title {
+        font-family: system-ui;
+        font-size: 2.5em;
+        color: global.$Bright_Gray;
+      }
+    }
+    .sub-title {
+      margin-bottom: 100px;
+      mat-card-subtitle {
+        font-family: system-ui;
+        font-size: 2em;
+        line-height: 1.3em;
+        color: global.$Tiffany_Blue;
+      }
+    }
+    .actions {
+      mat-card-actions {
+          height: auto;
+      }
+    }
+  }
+}

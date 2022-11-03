@@ -1,0 +1,103 @@
+@use "../../../../../scss/global";
+.common-button {
+  text-align: center;
+  .mat-raised-button {
+    background-color: global.$Tiffany_Blue;
+    color: global.$white;
+    height: 70px;
+    min-width: 70%;
+    font-size: x-large;
+    border-radius: 0;
+    font-family: system-ui;
+  }
+  button:disabled {
+    background-color: global.$Baby_Blue_Eyes;
+  }
+}
+
+.save-button {
+  .mat-raised-button {
+    color: global.$white;
+    background-color: global.$Blueberry;
+    height: 40px;
+    font-size: x-large;
+    border-radius: 0;
+    font-family: system-ui;
+    transition: 300ms ease-in-out;
+    &:hover {
+      background-color: global.$Baby_Blue_Eyes;
+    }
+  }
+}
+
+.profile-save-button{
+  .mat-raised-button {
+    color: global.$white;
+    background-color: global.$Blueberry;
+    height: 50px;
+    width: 290px;
+    font-size: x-large;
+    border-radius: 0;
+    font-family: system-ui;
+    transition: 300ms ease-in-out;
+    border: 1px solid global.$Blueberry;
+    &:hover {
+      background-color: global.$white;
+      background-color: global.$Baby_Blue_Eyes;
+    }
+  }
+}
+.profile-cancel-button{
+  .mat-raised-button {
+    color: global.$Baby_Blue_Eyes;
+    background-color: global.$white;
+    height: 50px;
+    width: 290px;
+    font-size: x-large;
+    border-radius: 0;
+    font-family: system-ui;
+    border: 1px solid global.$Blueberry;
+    transition: 300ms ease-in-out;
+    &:hover {
+      background-color: global.$Baby_Blue_Eyes;
+      color: global.$white;
+    }
+  }
+}
+
+.apply-button{
+  .mat-raised-button {
+    color: global.$white;
+    background-color: global.$Blueberry;
+    height: 50px;
+    width: 100px;
+    font-size: x-large;
+    border-radius: 0;
+    font-family: system-ui;
+    transition: 300ms ease-in-out;
+    border: 1px solid global.$Blueberry;
+    &:hover {
+      background-color: global.$white;
+      background-color: global.$Baby_Blue_Eyes;
+    }
+  }
+}
+
+.reset-button{
+  .mat-raised-button {
+    color: global.$Baby_Blue_Eyes;
+    background-color: global.$white;
+    height: 50px;
+    width: 100px;
+    font-size: x-large;
+    border-radius: 0;
+    font-family: system-ui;
+    border: 1px solid global.$Blueberry;
+    transition: 300ms ease-in-out;
+    &:hover {
+      background-color: global.$Baby_Blue_Eyes;
+      color: global.$white;
+    }
+  }
+  
+}

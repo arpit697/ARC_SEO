@@ -1,0 +1,35 @@
+@use "../../../../scss/global";
+.title-card {
+  background-color: global.$Blueberry;
+  display: flex;
+  justify-content: space-between;
+  mat-card-title {
+    margin-bottom: 0;
+    color: global.$white;
+  }
+}
+
+.content-card {
+  border: 1px solid global.$Blueberry;
+  margin-top: 1em;
+  border-radius: 0;
+  box-shadow: none !important;
+  mat-form-field {
+    width: 100%;
+    ::ng-deep .mat-form-field-outline {
+      color: global.$white !important;
+      //opacity: 1!important;
+    }
+    textarea {
+      line-height: 1.5;
+      letter-spacing: 0.05em;
+      font: 1.5em Tahoma, cursive;
+      transition: box-shadow 0.5s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      /* font-smoothing: subpixel-antialiased; */
+      background-color: global.$Alice_Blue;
+      color: global.$Blueberry;
+      height: 100%;
+    }
+  }
+}

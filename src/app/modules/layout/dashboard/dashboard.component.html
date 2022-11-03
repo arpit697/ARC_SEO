@@ -1,0 +1,67 @@
+<mat-card class="user-management-card">
+    <mat-card-title>User Management</mat-card-title>
+    <mat-card-content>
+        <mat-card class="card">
+            <mat-card>
+                <mat-card class="header">
+                    <mat-card-subtitle>
+                        Total User
+                    </mat-card-subtitle>
+                    <mat-card-subtitle>
+                        1.1 K
+                    </mat-card-subtitle>
+                </mat-card>
+                <mat-card class="list-item">
+                    <mat-card-subtitle>Total Active User</mat-card-subtitle>
+                    <mat-card-subtitle>1.0 K</mat-card-subtitle>
+                </mat-card>
+                <mat-card class="list-item">
+                    <mat-card-subtitle>Total Blocked User</mat-card-subtitle>
+                    <mat-card-subtitle>100</mat-card-subtitle>
+                </mat-card>
+            </mat-card>
+        </mat-card>
+        <mat-card class="card">
+            <mat-card class="right-card-content">
+                <mat-card>
+                    <mat-card-title>
+                        24,00 <span>
+                            <mat-icon>cases</mat-icon>
+                        </span>
+                    </mat-card-title>
+                    <mat-card-subtitle>
+                        Total applied cases
+                        <mat-divider></mat-divider>
+                    </mat-card-subtitle>
+                </mat-card>
+            </mat-card>
+        </mat-card>
+    </mat-card-content>
+</mat-card>
+<mat-card class="toggle reset">
+    <mat-button-toggle-group>
+        <mat-button-toggle value="">Users <span></span> 250</mat-button-toggle>
+        <mat-button-toggle value="">Cases <span></span> 250</mat-button-toggle>
+    </mat-button-toggle-group>
+</mat-card>
+<mat-card class="filters reset">
+    <mat-card class="search-filter">
+        <mat-form-field appearance="outline">
+            <mat-label>Search by name</mat-label>
+            <input matInput type="text" name="" id="">
+            <mat-icon class="search-icon">search</mat-icon>
+        </mat-form-field>
+    </mat-card>
+    <mat-card class="last-week reset">
+        <button mat-raised-button [matMenuTriggerFor]="lastWeek">Last Week <mat-icon>arrow_drop_down</mat-icon>
+        </button>
+        <mat-menu #lastWeek="matMenu">
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+        </mat-menu>
+    </mat-card>
+</mat-card>
+
+<mat-card class="table">
+   <app-common-table [tableColumns]="tableColumns" [tableData]="tableData" [isPageable]="true" [defaultPageSize]="3"></app-common-table>
+</mat-card>

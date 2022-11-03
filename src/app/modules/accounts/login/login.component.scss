@@ -1,0 +1,200 @@
+@use "../../../../scss/global";
+
+.container{
+  .social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    color: #EAEAEA;
+    margin-top: 3em;
+  }
+}
+
+mat-card {
+  padding: 0 15% 0 15%;
+  border-radius: 0;
+  background-color: global.$Arsenic;
+  box-shadow: none !important;
+  display: grid;
+  gap: 2em;
+  mat-card-title {
+    font-family: system-ui;
+    font-size: 2.5em;
+    line-height: 1.2em;
+    color: global.$Bright_Gray;
+    margin-bottom: 0.5em;
+  }
+  mat-card-subtitle {
+    font-family: system-ui;
+    font-size: 1.7em;
+    line-height: 1.2em;
+    color: global.$Tiffany_Blue;
+  }
+
+  @include global.mat-form-field-outline;
+  @include global.mat-form-field-label;
+  @include global.mat-check-box;
+  mat-card-content {
+    a {
+      text-decoration: none;
+      color: global.$Baby_Blue_Eyes;
+    }
+    mat-checkbox {
+      color: global.$Tiffany_Blue;
+    }
+  }
+  
+}
+.fields {
+  display: grid;
+  gap: 3em;
+
+  mat-form-field {
+    color: global.$Bright_Gray;
+
+    ::-webkit-input-placeholder {
+      /* Edge */
+      color: global.$Bright_Gray;
+    }
+
+    :-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: global.$Bright_Gray;
+    }
+
+    ::placeholder {
+      color: global.$Bright_Gray;
+    }
+
+    mat-error{
+      font-size: 1.5em;
+     color: #FF577F;
+    }
+  }
+}
+.material-icons {
+  color: global.$Bright_Gray !important;
+}
+.forgot-pass {
+  display: flex;
+  justify-content: end;
+  margin-top: -2em;
+  .link {
+    color: global.$Bright_Gray;
+  }
+}
+
+.one {
+  margin-bottom: 3em;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  .two {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+  }
+  mat-icon {
+    padding: 0.3em;
+    font-size: 2em;
+    color: red !important;
+  }
+}
+
+/* .main-container {
+  .login-container {
+    form {
+      mat-card {
+        @include global.mat-card-reset;
+        padding: 0 15% 0 15%;
+        .title {
+          margin-top: 30px;
+          margin-bottom: 25px;
+          line-height: 3em;
+          mat-card-title {
+            font-family: system-ui;
+            font-size: 2.5em;
+            color: global.$Blueberry;
+          }
+        }
+        .sub-title {
+          margin-bottom: 40px;
+          mat-card-subtitle {
+            font-family: system-ui;
+            font-size: 2em;
+            line-height: 1.3em;
+            color: global.$Blueberry;
+          }
+        }
+        .content {
+          mat-card-content {
+            @include global.mat-form-field-outline;
+            @include global.mat-form-field-label;
+            display: grid;
+            grid-template-rows: auto auto;
+            gap: 40px;
+            mat-from-field {
+              @include global.mat-form-field-label;
+            }
+            .material-icons {
+              color: global.$Baby_Blue_Eyes !important;
+            }
+          }
+        }
+        .actions {
+          mat-card-actions {
+            .forgot-password {
+              font-family: system-ui;
+              text-align: end;
+              margin-right: 10px;
+              a {
+                text-decoration: none;
+                color: global.$Baby_Blue_Eyes;
+              }
+            }
+          }
+          .remember-me {
+            margin-top: 20px;
+            margin-bottom: 50px;
+            span {
+              mat-checkbox {
+                margin-left: 10px;
+                font-family: system-ui;
+                color: global.$Blueberry;
+              }
+              @include global.mat-check-box;
+            }
+          }
+          .warning {
+            @include global.flex_position(center, center, row);
+            height: 20;
+            position: relative;
+            small {
+              position: absolute;
+              @include global.flex_position(center, center, row);
+              font-size: 1em;
+              color: red;
+              mat-icon {
+                height: 30px;
+                width: 30px;
+                margin-right: 10px;
+                font-size: 30px;
+              }
+            }
+          }
+          .button-submit-container {
+            margin-top: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 480px) {
+  mat-card{
+    display: grid;
+  }
+}
+ */

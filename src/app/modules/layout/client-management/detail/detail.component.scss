@@ -1,0 +1,166 @@
+@use "../../../../../scss/global";
+
+mat-card {
+  border-radius: 0;
+  box-shadow: none !important;
+  mat-card-subtitle {
+    color: global.$Blueberry;
+  }
+  mat-card-title {
+    color: global.$Blueberry;
+  }
+  mat-card-content {
+    /* mixin for radio buttons */
+    ::ng-deep
+      .mat-radio-button.mat-accent.mat-radio-checked
+      .mat-radio-outer-circle {
+      border-color: global.$Blueberry;
+    }
+
+    ::ng-deep .mat-radio-button.mat-accent .mat-radio-inner-circle {
+      color: global.$Blueberry;
+      background-color: global.$Blueberry;
+    }
+
+    ::ng-deep
+      .mat-radio-button.mat-accent
+      .mat-radio-ripple
+      .mat-ripple-element {
+      background-color: global.$Baby_Blue_Eyes;
+    }
+  }
+  mat-radio-group {
+    display: flex;
+    gap: 10em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+  .mat-raised-button {
+    color: global.$Blueberry;
+    border: 1px solid global.$Blueberry;
+    width: 150px;
+    border-radius: 0;
+  }
+}
+mat-form-field {
+  ::placeholder {
+    color: global.$Blueberry;
+  }
+  ::ng-deep .mat-form-field-outline {
+    color: global.$Blueberry !important;
+    //opacity: 1!important;
+  }
+  ::ng-deep .mat-form-field-outline-start {
+    border-radius: 0 !important;
+  }
+  ::ng-deep .mat-form-field-outline-end {
+    border-radius: 0 !important;
+  }
+}
+
+.delete-block-action {
+  display: flex;
+  justify-content: end;
+  gap: 1em;
+  mat-icon {
+    background-color: blue;
+    padding: 0.5em;
+    font-size: 2em;
+    color: global.$white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.main-card {
+  background-color: global.$Alice_Blue;
+  .card-container {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid lightgray;
+    background-color: global.$Alice_Blue;
+    &:last-child {
+      border-bottom: none;
+    }
+    mat-card {
+      background-color: global.$Alice_Blue;
+    }
+    .card {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      &:nth-child(odd) {
+        border-right: 1px solid lightgray;
+      }
+      mat-card-content {
+        img {
+          height: 200px;
+          width: 200px;
+        }
+        mat-card-subtitle {
+          &:nth-child(even) {
+            margin-bottom: 40px;
+            font-size: 1.5em;
+          }
+          &:nth-child(odd) {
+            font-size: 1.3em;
+          }
+          &:last-child {
+            margin-bottom: 20px;
+          }
+          &:first-child {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+    .right {
+      grid-template-columns: 0fr 1fr;
+    }
+  }
+}
+
+.at-call {
+  display: grid;
+  grid-template-columns: auto auto;
+  .ssn-form-field {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 0;
+    padding-top: 1em;
+    mat-form-field {
+      width: 100%;
+    }
+  }
+}
+.report-review {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 0;
+}
+.payment-mode {
+  padding: 0;
+  display: flex;
+  flex: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.upload-container {
+  display: flex;
+  gap: 20px;
+  background-color: global.$Alice_Blue;
+  mat-card {
+    height: 100px;
+    width: 150px;
+  }
+}
+
+.table-card {
+  padding: 0;
+}

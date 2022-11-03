@@ -1,0 +1,171 @@
+@use "../../../../scss/global";
+
+.user-management-card {
+  @include global.mat-card-reset;
+}
+
+mat-card {
+  mat-card-title {
+    font-size: 2em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: global.$Blueberry;
+  }
+  mat-card-subtitle {
+    font-size: 1em;
+    margin: 0;
+  }
+  mat-icon{
+    color: global.$Blueberry;
+  }
+}
+
+mat-card {
+  padding: 20px;
+
+  mat-card-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    gap: 50px;
+    .card {
+      display: grid;
+      border-radius: 0;
+      background-color: global.$Baby_Blue_Eyes;
+      .header:first-child {
+        border-radius: 0;
+        background-color: global.$Blueberry;
+        display: flex;
+        justify-content: space-between;
+        mat-card-subtitle {
+          color: global.$white;
+        }
+      }
+      .list-item {
+        border-radius: 0;
+        box-shadow: none;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .right-card-content {
+      background-color: global.$white;
+      padding-left: 50px;
+      padding-right: 50px;
+      display: grid;
+      mat-card-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        color: global.$white;
+        font-size: 3em;
+        span {
+          mat-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1em;
+            padding: 10px;
+          }
+        }
+      }
+      mat-card {
+        background-color: global.$Blueberry;
+        mat-card-subtitle {
+          color: global.$white;
+          font-size: 1.5em;
+        }
+        mat-divider {
+          margin-top: 7px;
+          background-color: global.$white;
+        }
+      }
+    }
+  }
+}
+.toggle {
+  @include global.mat-card-reset;
+  margin-top: 30px;
+  mat-button-toggle-group {
+    span::after {
+      content: "○";
+    }
+    border: 1px solid blue;
+    ::ng-deep
+      .mat-button-toggle-appearance-standard
+      .mat-button-toggle-label-content {
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      border-radius: 5px;
+      color: global.$white;
+      font-size: 1.5em;
+      background-color: global.$Blueberry;
+    }
+  }
+}
+.filters {
+  @include global.mat-form-field-outline;
+  @include global.mat-form-field-label;
+  @include global.mat-card-reset;
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 30px;
+  .search-filter {
+    @include global.mat-card-reset;
+    display: grid;
+    align-items: center;
+    .search-icon {
+      position: absolute;
+      left: 0;
+      margin-top: -6px;
+    }
+  }
+  .last-week {
+    @include global.mat-card-reset;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    button {
+      height: 60px;
+      width: 200px;
+      background-color: global.$white;
+      border: 1px solid global.$Blueberry;
+      border-radius: 0;
+      margin-top: -15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+    }
+  }
+}
+
+.table {
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none !important;
+  
+}
+
+::ng-deep.mat-paginator-page-size-label{
+ display: none;
+}
+::ng-deep .mat-paginator-page-size{
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .user-management-card{
+    mat-card-content{
+      grid-template-columns: auto;
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .filters{
+    grid-template-columns: auto;
+    margin-bottom: 10px;
+  }
+}

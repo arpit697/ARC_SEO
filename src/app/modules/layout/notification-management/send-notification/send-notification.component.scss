@@ -1,0 +1,45 @@
+@use "../../../../../scss/global";
+
+.send-notification {
+  box-shadow: none !important;
+  .title {
+    margin-bottom: 30px;
+    color: global.$Blueberry;
+  }
+  .select-user {
+    box-shadow: none !important;
+    .title {
+      color: global.$Blueberry;
+    }
+    .radio-buttons {
+      @include global.mat-radio-button;
+      mat-radio-group {
+        color: global.$Blueberry;
+        display: flex;
+        gap: 20px;
+      }
+    }
+  }
+  .title-form-field {
+    box-shadow: none !important;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    @include global.mat-form-field-outline;
+  }
+  .text-area {
+    box-shadow: none !important;
+    display: grid;
+    grid-template-columns: auto auto;
+    @include global.mat-form-field-outline;
+  }
+  .send-button {
+    box-shadow: none !important;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    mat-card-actions {
+      text-align: center;
+    }
+  }
+}

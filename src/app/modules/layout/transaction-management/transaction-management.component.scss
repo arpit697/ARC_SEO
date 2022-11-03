@@ -1,0 +1,218 @@
+@use "../../../../scss/global";
+mat-card {
+  border-radius: 0;
+  box-shadow: none !important;
+  mat-card-subtitle {
+    color: global.$Blueberry;
+  }
+  mat-card-title {
+    color: global.$Blueberry;
+  }
+  .mat-raised-button {
+    color: global.$Blueberry;
+    border: 1px solid global.$Blueberry;
+    width: 150px;
+    border-radius: 0;
+  }
+}
+mat-form-field {
+  ::placeholder {
+    color: global.$Blueberry;
+  }
+  ::ng-deep .mat-form-field-outline {
+    color: global.$Blueberry !important;
+    //opacity: 1!important;
+  }
+  ::ng-deep .mat-form-field-outline-start {
+    border-radius: 0 !important;
+  }
+  ::ng-deep .mat-form-field-outline-end {
+    border-radius: 0 !important;
+  }
+}
+.container {
+  .nav {
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    margin-bottom: 20px;
+    mat-card {
+      padding: 2.6em;
+      background-color: global.$Blueberry;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      mat-card-title {
+        color: global.$white;
+        font-size: 2.2em;
+        line-height: 1em;
+      }
+    }
+  }
+  .filter-card {
+    border: 1px solid global.$Blueberry;
+    .search-filter {
+      display: grid;
+      grid-template-columns: auto auto;
+      .search-box {
+        display: grid;
+        vertical-align: middle;
+      }
+      .show-select {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+      }
+    }
+    .select-menu {
+      display: flex;
+      mat-card-subtitle,
+      mat-card-content {
+        margin-left: 10px;
+      }
+      .export-icon {
+        margin-left: auto;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        border-radius: 50%;
+        font-size: 50px;
+        padding: 20px;
+        background-color: global.$Blueberry;
+        color: global.$white;
+      }
+    }
+    .action-buttons {
+      mat-card-actions {
+        display: flex;
+        gap: 20px;
+        justify-content: end;
+      }
+    }
+  }
+}
+.table-card {
+  border: 1px solid global.$Blueberry;
+  min-height: 20vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+/* @use "../../../../scss/global";
+
+.main-container {
+  @include global.main-container;
+  .container {
+    @include global.container;
+    .payments{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 50px;
+        mat-card{
+            @include global.mat-card-reset;
+            height: 100px;
+            background-color:global.$Cornflower_Blue;
+            color: global.$white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-between;
+            mat-card-title{
+                margin: 20px;
+                font-size: 2em;
+                line-height: 1em;
+            }
+        }
+    }
+    .filters {
+      @include global.mat-card-reset;
+      border: 1px solid global.$Blueberry;
+      padding: 20px;
+      margin-top: 50px;
+      .search-field {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        @include global.mat-form-field-outline;
+        mat-form-field {
+          width: 80%;
+        }
+        .show {
+          button {
+            height: 60px;
+            width: 100px;
+            border: 1px solid global.$Blueberry;
+            border-radius: 0;
+            margin-top: -15px;
+          }
+        }
+      }
+      .export {
+        position: absolute;
+        right: 0;
+        margin-right: 15px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        font-size: 50px;
+        border-radius: 50%;
+        background-color: global.$Blueberry;
+        color: global.$white;
+        transition: 300ms ease-in-out;
+        &:hover {
+          background-color: global.$Baby_Blue_Eyes;
+        }
+      }
+    }
+    .add-on {
+      display: flex;
+      gap: 30px;
+      .form {
+        margin-top: 50px;
+        button {
+          height: 60px;
+          width: 100px;
+          border: 1px solid global.$Blueberry;
+          border-radius: 0;
+          margin-top: -15px;
+        }
+      }
+      .to {
+        margin-top: 50px;
+        button {
+          height: 60px;
+          width: 100px;
+          border: 1px solid global.$Blueberry;
+          border-radius: 0;
+          margin-top: -15px;
+        }
+      }
+      .select {
+        margin-top: 50px;
+        button {
+          height: 60px;
+          width: 100px;
+          border: 1px solid global.$Blueberry;
+          border-radius: 0;
+          margin-top: -15px;
+        }
+      }
+    }
+    .actions {
+      padding: 10px;
+      margin-top: 50px;
+      mat-card-actions {
+        display: flex;
+        gap: 30px;
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+ */

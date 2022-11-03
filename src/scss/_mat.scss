@@ -1,0 +1,89 @@
+@use "var";
+
+/* 
+form field mixins
+*/
+@mixin mat-form-field-outline {
+  ::ng-deep .mat-form-field-outline {
+    color: var.$Tiffany_Blue !important;
+    //opacity: 1!important;
+  }
+
+  ::ng-deep .mat-form-field-flex > .mat-form-field-infix {
+    padding: 25px !important;
+  }
+  ::ng-deep .mat-form-field-label-wrapper {
+    top: -0em;
+    left: 1.5em;
+  }
+
+  ::ng-deep
+    .mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float
+    .mat-form-field-label {
+    transform: translateY(-1.6em) scale(0.8);
+    width: 133.33333%;
+  }
+  ::ng-deep .mat-form-field-outline-start {
+    border-radius: 0 !important;
+  }
+
+  ::ng-deep .mat-form-field-outline-end {
+    border-radius: 0 !important;
+  }
+}
+
+@mixin mat-form-field-label {
+  ::ng-deep .mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: var.$Bright_Gray !important;
+  }
+}
+
+/* 
+@check box mixins
+*/
+
+@mixin mat-check-box {
+  ::ng-deep .mat-checkbox-checked .mat-checkbox-background {
+    background-color: var.$Tiffany_Blue;
+  }
+  ::ng-deep .mat-checkbox-frame {
+    border-color: var.$Tiffany_Blue;
+  }
+
+  ::ng-deep
+    .mat-checkbox-checked.mat-accent
+    .mat-checkbox-ripple
+    .mat-ripple-element {
+    opacity: 0.03 !important;
+    background-color: var.$Tiffany_Blue !important;
+  }
+
+  ::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background,
+  .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+    background-color: var.$Tiffany_Blue !important;
+  }
+  ::ng-deep .mat-checkbox-ripple .mat-ripple-element,
+  .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+    background-color: var.$Tiffany_Blue !important;
+  }
+}
+
+/* 
+@ radio button mixin
+*/
+
+@mixin mat-radio-button {
+  ::ng-deep .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle{
+    border-color:var.$Blueberry;
+  }
+  
+  ::ng-deep .mat-radio-button.mat-accent .mat-radio-inner-circle{
+    color:var.$Blueberry;
+    background-color:var.$Blueberry;
+  }
+  
+  ::ng-deep .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element {
+      background-color: var.$Baby_Blue_Eyes;
+  }
+}

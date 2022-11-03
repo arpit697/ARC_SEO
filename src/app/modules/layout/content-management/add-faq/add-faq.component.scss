@@ -1,0 +1,36 @@
+@use "../../../../../scss/global";
+
+mat-card {
+  border-radius: 0;
+  box-shadow: none !important;
+  mat-card-title {
+    color: global.$Blueberry;
+    font-size: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  ::ng-deep .tox-tinymce {
+    border-radius: 0px;
+  }
+  ::ng-deep .tox .tox-statusbar {
+    display: none;
+  }
+
+  ::ng-deep .tox .tox-toolbar-overlord .tox-toolbar__primary {
+    background-position: center top 39px;
+    background-color: global.$Baby_Blue_Eyes !important;
+  }
+  ::ng-deep .tox .tox-tbtn svg {
+    display: block;
+    fill: global.$Blueberry !important;
+  }
+  ::ng-deep .tox-editor-header {
+    padding: 0px !important;
+  }
+  ::ng-deep .tox-statusbar {
+    display: none;
+  }
+  ::ng-deep .tox-tinymce {
+    border-radius: 0px;
+  }
+}

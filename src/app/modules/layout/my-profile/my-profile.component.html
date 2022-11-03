@@ -1,0 +1,51 @@
+
+        <mat-card class="detail-card">
+            <mat-card-content>
+                <img matCardImage
+                    src="https://icons.veryicon.com/png/o/miscellaneous/two-color-icon-library/user-286.png" alt="">
+                <div class="detail">
+                    <ul>
+                        <li><span>Name : </span>Robert</li>
+                        <li><span>Email ID : </span>robert@gmail.com</li>
+                        <li><span>Title : </span>Admin</li>
+                    </ul>
+                </div>
+            </mat-card-content>
+        </mat-card>
+        <mat-card class="change-pass-card">
+            <mat-card-content>
+                <div class="title">
+                    <mat-card-title>
+                        Change Password
+                    </mat-card-title>
+                </div>
+                <div class="current-pass">
+                    <div class="field">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Current Password</mat-label>
+                            <input matInput type="text" name="" id="">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="reset-pass">
+                    <div class="field">
+
+                        <mat-form-field appearance="outline">
+                            <mat-label>New Password</mat-label>
+                            <input matInput type="text" name="" id="">
+                        </mat-form-field>
+                    </div>
+                    <div class="field">
+                        <mat-form-field appearance="outline">
+                            <mat-label for="">Confirm Password</mat-label>
+                            <input matInput type="text" name="" id="">
+                        </mat-form-field>
+                    </div>
+                </div>
+            </mat-card-content>
+            <mat-card-actions>
+                <app-common-button [text]="'Cancel'" [buttonClass]="'profile-cancel-button'"></app-common-button>
+                <app-common-button [text]="'Save'" [buttonClass]="'profile-save-button'"></app-common-button>
+            </mat-card-actions>
+        </mat-card>
+  

@@ -1,0 +1,79 @@
+<mat-sidenav-container autosize>
+    <mat-sidenav opened="true" mode="side">
+        <mat-nav-list>
+            <mat-list-item (click)="isExpanded = !isExpanded">
+                <mat-icon class="chevron-button" [ngClass]="{'rotated' : isExpanded}">arrow_forward</mat-icon>
+            </mat-list-item>
+            <mat-nav-list class="logo-image-container"
+                style="display:flex; justify-content:center ; align-items: center;">
+                <img class="logo-image"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPyGNr2qL63Sfugk2Z1-KBEwMGOfycBribew&usqp=CAU"
+                    alt="">
+                <span class="logo-title" *ngIf="isExpanded">ARC</span>
+            </mat-nav-list>
+            <div class="router-links">
+                <mat-list-item class="link" routerLinkActive="list-item-active"
+                    [routerLink]="'DASHBOARD' | absoluteRouting">
+                    <mat-icon>home</mat-icon>
+                    <span *ngIf="isExpanded">Dashboard</span>
+                </mat-list-item>
+                <mat-list-item class="link" routerLinkActive="list-item-active"
+                    [routerLink]="'CLIENT_MANAGEMENT' | absoluteRouting">
+                    <mat-icon>boy</mat-icon>
+                    <span *ngIf="isExpanded">Client Management</span>
+                </mat-list-item>
+                <mat-list-item class="link" routerLinkActive="list-item-active"
+                    [routerLink]="'USER_MANAGEMENT' | absoluteRouting">
+                    <mat-icon>person</mat-icon>
+                    <span *ngIf="isExpanded">User Management</span>
+                </mat-list-item>
+                <mat-list-item class="link" routerLinkActive="list-item-active"
+                    [routerLink]="'TRANSACTION_MANAGEMENT' | absoluteRouting">
+                    <mat-icon>edit_note</mat-icon>
+                    <span *ngIf="isExpanded">Transaction Management</span>
+                </mat-list-item>
+                <mat-list-item class="link" routerLinkActive="list-item-active"
+                    [routerLink]="'EARNINGS_MANAGEMENT' | absoluteRouting">
+                    <mat-icon>swap_horizontal_circle</mat-icon>
+                    <span *ngIf="isExpanded">Earnings Management</span>
+                </mat-list-item>
+                <mat-list-item class="link" routerLinkActive="list-item-active"
+                    [routerLink]="'NOTIFICATION_MANAGEMENT' | absoluteRouting">
+                    <mat-icon>notifications</mat-icon>
+                    <span *ngIf="isExpanded">Notification Management</span>
+                </mat-list-item>
+                <mat-list-item class="link" routerLinkActive="list-item-active"
+                    [routerLink]="'CONTENT_MANAGEMENT' | absoluteRouting">
+                    <mat-icon>content_paste</mat-icon>
+                    <span *ngIf="isExpanded">Content Management</span>
+                </mat-list-item>
+                <mat-list-item class="link" routerLinkActive="list-item-active"
+                    [routerLink]="'STAFF_MANAGEMENT' | absoluteRouting">
+                    <mat-icon>recent_actors</mat-icon>
+                    <span *ngIf="isExpanded">Staff Management</span>
+                </mat-list-item>
+            </div>
+        </mat-nav-list>
+
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <mat-toolbar>
+            <div class="headings">
+                <h1 class="toolbar-heading">
+                    {{_router.url | clearString | slice:1 | titlecase}}
+                </h1>
+
+            </div>
+            <div class="notification-profile">
+                <mat-icon (click)="hello()">notifications</mat-icon>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPyGNr2qL63Sfugk2Z1-KBEwMGOfycBribew&usqp=CAU"
+                    alt="" (click)="routeMyProfile()">
+                <mat-icon (click)="logOut()">logout</mat-icon>
+            </div>
+        </mat-toolbar>
+        <div class="router-outlet">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

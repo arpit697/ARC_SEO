@@ -1,0 +1,139 @@
+<mat-card class="container">
+    <mat-card class="nav">
+        <mat-card>
+            <mat-card-title>Total Earning</mat-card-title>
+        </mat-card>
+
+        <mat-card>
+            <mat-card-title>$20,0000</mat-card-title>
+        </mat-card>
+        <mat-card>
+            <button mat-raised-button [matMenuTriggerFor]="week">Week <mat-icon>arrow_drop_down</mat-icon>
+            </button>
+            <mat-menu #week="matMenu">
+                <button mat-menu-item>Item 1</button>
+                <button mat-menu-item>Item 2</button>
+            </mat-menu>
+        </mat-card>
+    </mat-card>
+    <mat-card class="filter-card">
+        <mat-card class="search-filter">
+            <mat-card class="search-box">
+                <mat-form-field appearance="outline">
+                    <input matInput type="text" placeholder="Search Through Name , Client ID">
+                </mat-form-field>
+            </mat-card>
+            <mat-card class="show-select">
+                <mat-card-content>
+                    <button mat-raised-button [matMenuTriggerFor]="show">Show <mat-icon>arrow_drop_down</mat-icon>
+                    </button>
+                    <mat-menu #show="matMenu">
+                        <button mat-menu-item>Item 1</button>
+                        <button mat-menu-item>Item 2</button>
+                    </mat-menu>
+                </mat-card-content>
+            </mat-card>
+        </mat-card>
+        <mat-card class="select-menu">
+            <mat-card-content>
+                <mat-card-subtitle>Sort By</mat-card-subtitle>
+                <mat-card-content>
+                    <button mat-raised-button [matMenuTriggerFor]="weekly">Weekly <mat-icon>arrow_drop_down</mat-icon>
+                        </button>
+                    <mat-menu #weekly="matMenu">
+                        <button mat-menu-item>Item 1</button>
+                        <button mat-menu-item>Item 2</button>
+                    </mat-menu>
+                </mat-card-content>
+            </mat-card-content>
+            <mat-card-content>
+                <mat-card-subtitle>Sort By</mat-card-subtitle>
+            <mat-card-content>
+                <button mat-raised-button [matMenuTriggerFor]="select">Status<mat-icon>arrow_drop_down</mat-icon>
+                    </button>
+                <mat-menu #select="matMenu">
+                    <button mat-menu-item>Item 1</button>
+                    <button mat-menu-item>Item 2</button>
+                </mat-menu>
+            </mat-card-content>
+            </mat-card-content>
+        </mat-card>
+        <mat-card class="action-buttons">
+            <mat-card-actions>
+                <app-common-button [text]="'Apply'" [buttonClass]="'apply-button'"></app-common-button>
+                <app-common-button [text]="'Reset'" [buttonClass]="'reset-button'"></app-common-button>
+            </mat-card-actions>
+        </mat-card>
+    </mat-card>
+</mat-card>
+<mat-card>
+    <mat-card class="table-card">
+        <mat-card-title>
+            area for table
+        </mat-card-title>
+    </mat-card>
+</mat-card>
+<!-- <section class="main-container">
+    <div class="container">
+        <div class="total-earning">
+            <mat-card>
+                <mat-card-title>
+                    Total Earning
+                </mat-card-title>
+                <mat-card-title>
+                    $2000
+                </mat-card-title>
+                <mat-card-title>
+                    <div class="show">
+                        <button mat-raised-button [matMenuTriggerFor]="week">Week <mat-icon>arrow_drop_down</mat-icon>
+                            </button>
+                        <mat-menu #week="matMenu">
+                            <button mat-menu-item>Item 1</button>
+                            <button mat-menu-item>Item 2</button>
+                        </mat-menu>
+                    </div>
+                </mat-card-title>
+            </mat-card>
+        </div>
+        <mat-card class="filters">
+            <div class="search-field">
+                <mat-form-field appearance="outline">
+                    <mat-label>Search through Name , Client Id</mat-label>
+                    <input matInput type="text" name="" id="">
+                </mat-form-field>
+                <div class="show">
+                    <button mat-raised-button [matMenuTriggerFor]="show">Show <mat-icon>arrow_drop_down</mat-icon>
+                        </button>
+                    <mat-menu #show="matMenu">
+                        <button mat-menu-item>Item 1</button>
+                        <button mat-menu-item>Item 2</button>
+                    </mat-menu>
+
+                </div>
+            </div>
+            <div class="short-status">
+                <div class="short-by">
+                    <button mat-button [matMenuTriggerFor]="shortBy">Short By <mat-icon>arrow_drop_down</mat-icon></button>
+                    <mat-menu #shortBy="matMenu">
+                        <button mat-menu-item>Item 1</button>
+                        <button mat-menu-item>Item 2</button>
+                    </mat-menu>
+                </div>
+                <div class="status">
+                    <button mat-button [matMenuTriggerFor]="status">Status <mat-icon>arrow_drop_down</mat-icon></button>
+                    <mat-menu #status="matMenu">
+                        <button mat-menu-item>Item 1</button>
+                        <button mat-menu-item>Item 2</button>
+                    </mat-menu>
+                </div>
+            </div>
+            <div class="actions">
+                <mat-card-actions>
+                    <app-common-button [text]="'Apply'" [buttonClass]="'apply-button'"></app-common-button>
+                    <app-common-button [text]="'Reset'" [buttonClass]="'reset-button'"></app-common-button>
+                </mat-card-actions>
+            </div>
+        </mat-card>
+    </div>
+</section>
+ -->

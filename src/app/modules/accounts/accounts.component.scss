@@ -1,0 +1,97 @@
+@use "../../../scss/global";
+/* .container {
+  display: grid;
+  grid-template-columns: auto auto;
+  .card {
+    mat-card {
+      @include global.mat-card-reset;
+      min-height: 800px;
+    }
+    .card-one {
+      background-color: global.$Cornflower_Blue;
+      @include global.flex_position(center, center, column);
+      height: 100vh;
+      width: 50vw;
+      .title {
+        line-height: 2.5em;
+        text-align: center;
+        mat-card-title {
+          font-weight: bolder;
+          font-size: xx-large;
+          letter-spacing: 0.2em;
+        }
+      }
+      .sub-title {
+        line-height: 2em;
+        text-align: center;
+        mat-card-subtitle {
+          font-size: xx-large;
+          letter-spacing: 0.1em;
+        }
+      }
+    }
+    .card-two {
+      width: 50vw;
+      height: 100vh;
+      display: grid;
+    }
+  }
+}
+@media screen and (max-width: 740px) {
+  .container {
+    grid-template-columns: auto;
+    .card {
+      mat-card {
+        min-height: 25vh;
+      }
+      .card-one {
+        height: auto;
+        width: 100%;
+        min-width: 380px;
+      }
+      .card-two{
+        width: 100%;
+        height: 100%;
+        min-width: 380px;
+      }
+    }  
+  }
+}
+ */
+
+.card-container {
+  height: 100vh;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  .left-card {
+    border-radius: 0;
+    background-color: global.$Tiffany_Blue;
+    display: grid;
+    align-items: center;
+    border: 2em solid global.$Arsenic;
+    mat-card-title {
+      font-weight: bolder;
+      font-size: xx-large;
+      letter-spacing: 0.2em;
+      line-height: 2em;
+      text-align: center;
+    }
+    mat-card-subtitle {
+      font-size: xx-large;
+      letter-spacing: 0.1em;
+      line-height: 2em;
+      text-align: center;
+    }
+  }
+  .right-card {
+    background-color: global.$Arsenic;
+    display: grid;
+    border-radius: 0;
+  }
+}
+@media screen and (max-width: 740px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}

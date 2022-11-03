@@ -1,0 +1,369 @@
+<mat-card class="nav">
+    <img matCardImage src="https://icons.veryicon.com/png/o/miscellaneous/two-color-icon-library/user-286.png" alt="">
+    <mat-card-actions>
+        <a (click)="hello()">Upload User Profile</a>
+    </mat-card-actions>
+</mat-card>
+<mat-card class="card-container">
+    <mat-card>
+        <mat-card class="card">
+            <mat-card-content>
+                <mat-card-subtitle>*Full Name</mat-card-subtitle>
+                <mat-form-field appearance="outline">
+                    <input matInput type="text" name="" id="">
+                </mat-form-field>
+            </mat-card-content>
+            <mat-card-content>
+                <mat-card-subtitle>*Email Address</mat-card-subtitle>
+                <mat-form-field appearance="outline">
+                    <input matInput type="text" name="" id="">
+                </mat-form-field>
+            </mat-card-content>
+            <mat-card-content>
+                <mat-card-subtitle>*Phone Number</mat-card-subtitle>
+                <mat-form-field appearance="outline">
+                    <input matInput type="text" name="" id="">
+                </mat-form-field>
+            </mat-card-content>
+        </mat-card>
+        <mat-divider vertical="true"></mat-divider>
+        <mat-card class="card">
+            <mat-card-content>
+                <mat-card-subtitle>*Postal Code</mat-card-subtitle>
+                <mat-form-field appearance="outline">
+                    <input matInput type="text" name="" id="">
+                </mat-form-field>
+            </mat-card-content>
+            <mat-card-content>
+                <mat-card-subtitle>*Password</mat-card-subtitle>
+                <mat-form-field appearance="outline">
+                    <input matInput type="text" name="" id="">
+                </mat-form-field>
+            </mat-card-content>
+            <mat-card-content>
+                <mat-card-subtitle>*Confirm Password</mat-card-subtitle>
+                <mat-form-field appearance="outline">
+                    <input matInput type="text" name="" id="">
+                </mat-form-field>
+            </mat-card-content>
+        </mat-card>
+    </mat-card>
+    <mat-card-actions>
+        <app-common-button [text]="'Save'" [buttonClass]="'save-button'"></app-common-button>
+    </mat-card-actions>
+</mat-card>
+
+
+<mat-card class="at-call">
+    <mat-card>
+        <mat-card-title>Attended Call #1?</mat-card-title>
+        <mat-card-content>
+            <mat-radio-group>
+                <mat-radio-button>YES</mat-radio-button>
+                <mat-radio-button>NO</mat-radio-button>
+            </mat-radio-group>
+        </mat-card-content>
+    </mat-card>
+    <mat-card>
+        <mat-card-title>
+            <mat-card-title>
+                SSN Number <mat-icon>edit</mat-icon>
+            </mat-card-title>
+            <mat-card class="ssn-form-field">
+                <mat-card-content>
+                    <mat-form-field appearance="outline">
+                        <input matInput>
+                    </mat-form-field>
+                </mat-card-content>
+                <mat-card-actions>
+                    <app-common-button [text]="'Save'" [buttonClass]="'save-button'"></app-common-button>
+                </mat-card-actions>
+            </mat-card>
+        </mat-card-title>
+    </mat-card>
+</mat-card>
+<mat-card>
+    <mat-card-title>Attended Credit Counseling Session?</mat-card-title>
+    <mat-card-content>
+        <mat-radio-group>
+            <mat-radio-button>YES</mat-radio-button>
+            <mat-radio-button>NO</mat-radio-button>
+        </mat-radio-group>
+    </mat-card-content>
+</mat-card>
+<mat-card class="report-review">
+    <mat-card>
+        <mat-card-title>
+            Credit Report Reviewed
+            <!-- with Paralegal / Attorney ? -->
+        </mat-card-title>
+        <mat-card-content>
+            <mat-radio-group>
+                <mat-radio-button>YES</mat-radio-button>
+                <mat-radio-button>NO</mat-radio-button>
+            </mat-radio-group>
+        </mat-card-content>
+    </mat-card>
+    <!-- <mat-card>
+        <mat-card-title>
+            Case Status
+        </mat-card-title>
+        <mat-card-content>
+            <mat-radio-group>
+                <mat-radio-button>YES</mat-radio-button>
+                <mat-radio-button>NO</mat-radio-button>
+                <mat-radio-button>NO</mat-radio-button>
+            </mat-radio-group>
+        </mat-card-content>
+    </mat-card> -->
+</mat-card>
+<mat-card>
+    <mat-card-title>
+        Credit Report
+    </mat-card-title>
+    <mat-card>
+        <mat-card></mat-card>
+        <mat-card></mat-card>
+    </mat-card>
+</mat-card>
+<mat-card>
+    <mat-card-title>
+        Payment Type
+    </mat-card-title>
+    <mat-card-content>
+        <mat-radio-group>
+            <mat-radio-button>YES</mat-radio-button>
+            <mat-radio-button>NO</mat-radio-button>
+        </mat-radio-group>
+    </mat-card-content>
+</mat-card>
+<mat-card class="payment-mode">
+    <mat-card>
+        <mat-card-subtitle>
+            Paid Amount
+        </mat-card-subtitle>
+        <mat-card-content>
+            <mat-form-field appearance="outline">
+                <input matInput>
+            </mat-form-field>
+        </mat-card-content>
+    </mat-card>
+    <mat-card>
+        <mat-card-subtitle>
+            Pending Amount
+        </mat-card-subtitle>
+        <mat-card-content>
+            <mat-form-field appearance="outline">
+                <input matInput>
+            </mat-form-field>
+        </mat-card-content>
+    </mat-card>
+    <mat-card>
+        <!--  <mat-card-actions>
+            <app-common-button [text]="'Save'" [buttonClass]="'save-button'"></app-common-button>
+        </mat-card-actions> -->
+    </mat-card>
+</mat-card>
+<mat-card>
+    <mat-card-title>
+        BCI Files
+    </mat-card-title>
+    <mat-card class="upload-container">
+        <mat-card></mat-card>
+        <mat-card></mat-card>
+    </mat-card>
+</mat-card>
+
+
+
+
+<!-- <mat-card>
+    <mat-card-title>
+        Upload resource For the Client
+    </mat-card-title>
+    <mat-card class="upload-container">
+        <mat-card></mat-card>
+        <mat-card></mat-card>
+        <mat-card></mat-card>
+        <mat-card></mat-card>
+    </mat-card>
+</mat-card>
+<mat-card>
+    <mat-card-title>
+        Upload resource by the Client
+    </mat-card-title>
+    <mat-card class="upload-container">
+        <mat-card></mat-card>
+        <mat-card></mat-card>
+        <mat-card></mat-card>
+        <mat-card></mat-card>
+    </mat-card>
+</mat-card>
+<mat-card>
+    <mat-card class="table-card">
+        <mat-card-title>
+            area for table
+        </mat-card-title>
+    </mat-card>
+</mat-card> -->
+
+
+
+
+<!-- <section class="container">
+    <div class="user-management">
+        <div class="upload-user-profile">
+            <mat-card>
+                <img matCardImage
+                    src="https://icons.veryicon.com/png/o/miscellaneous/two-color-icon-library/user-286.png" alt="">
+                <mat-card-actions>
+                    <a (click)="hello()">Upload User Profile</a>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div class="user-detail">
+            <mat-card>
+                <mat-card-content>
+                    <div class="column">
+                        <div class="field">
+                            <label for="">*Full Name</label>
+                            <mat-form-field appearance="outline">
+                                <input matInput type="text" name="" id="">
+                            </mat-form-field>
+                        </div>
+                        <div class="field">
+                            <label for="">*Email Address</label>
+                            <mat-form-field appearance="outline">
+                                <input matInput type="text" name="" id="">
+                            </mat-form-field>
+                        </div>
+                        <div class="field">
+                            <label for="">*Phone Number</label>
+                            <mat-form-field appearance="outline">
+                                <input matInput type="text" name="" id="">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="column">
+                        <div class="field">
+                            <label for="">*postal Code</label>
+                            <mat-form-field appearance="outline">
+                                <input matInput type="text" name="" id="">
+                            </mat-form-field>
+                        </div>
+                        <div class="field">
+                            <label for="">*Password</label>
+                            <mat-form-field appearance="outline">
+                                <input matInput type="text" name="" id="">
+                            </mat-form-field>
+                        </div>
+                        <div class="field">
+                            <label for="">*Confirm Password</label>
+                            <mat-form-field appearance="outline">
+                                <input matInput type="text" name="" id="">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </mat-card-content>
+                <mat-card-actions>
+                    <app-common-button [text]="'Save'" [buttonClass]="'save-button'"></app-common-button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div class="radio-jungle">
+            <mat-card>
+                <mat-card-content>
+                    <div class="attended-interview">
+                        <h2>Attended Interview #1</h2>
+                        <div>
+                            <div class="radio-buttons">
+                                <mat-radio-group>
+                                    <mat-radio-button>YES</mat-radio-button>
+                                    <mat-radio-button>NO</mat-radio-button>
+                                </mat-radio-group>
+                            </div>
+                            <div class="ssn-number">
+                                <h2>SSN Number</h2>
+                                <div>
+                                    <mat-form-field appearance="outline">
+                                        <input matInput type="text">
+                                    </mat-form-field>
+                                    <div class="save-button">
+                                        <app-common-button [text]="'Save'" [buttonClass]="'save-button'">
+                                        </app-common-button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="attended-credit">
+                        <h2>Attended Credit Counselling Session</h2>
+                        <div class="radio-buttons">
+                            <mat-radio-group>
+                                <mat-radio-button>YES</mat-radio-button>
+                                <mat-radio-button>NO</mat-radio-button>
+                            </mat-radio-group>
+                        </div>
+                    </div>
+                    <div class="credit-file-review">
+                        <h2>Credit File Reviewed</h2>
+                        <div class="radio-buttons">
+                            <mat-radio-group>
+                                <mat-radio-button>YES</mat-radio-button>
+                                <mat-radio-button>NO</mat-radio-button>
+                            </mat-radio-group>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Credit Report</h2>
+                    </div>
+                    <div class="payment-type">
+                        <h2>Payment Type</h2>
+                        <div class="radio-buttons">
+                            <mat-radio-group>
+                                <mat-radio-button>YES</mat-radio-button>
+                                <mat-radio-button>NO</mat-radio-button>
+                            </mat-radio-group>
+                        </div>
+                        <div class="form-fields">
+                            <div class="field">
+                                <label for="">Lorem, ipsum dolor.</label>
+                                <mat-form-field appearance="outline">
+                                    <input matInput type="text">
+                                </mat-form-field>
+                            </div>
+                            <div class="field">
+                                <label for="">Lorem, ipsum dolor.</label>
+                                <mat-form-field appearance="outline">
+                                    <input matInput type="text">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="attended-interview-two">
+                        <h2>
+                            Attended InterView #2
+                        </h2>
+                        <div class="radio-buttons">
+                            <mat-radio-group>
+                                <mat-radio-button>YES</mat-radio-button>
+                                <mat-radio-button>NO</mat-radio-button>
+                            </mat-radio-group>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>
+                            BCI Files
+                        </h2>
+                    </div>
+                    <div>
+                        <h2>
+                            Download Resource
+                        </h2>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</section> -->

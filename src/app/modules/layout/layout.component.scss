@@ -1,0 +1,120 @@
+@use "../../../scss/global";
+mat-sidenav-container {
+  position: relative;
+  height: 100vh;
+  mat-sidenav {
+    border: global.$Blueberry 1px solid;
+    mat-nav-list {
+      .logo-image-container {
+        margin-top: 50px;
+        .logo-image {
+          height: 70px;
+          width: 70px;
+          border: 1px solid global.$Baby_Blue_Eyes;
+          border-radius: 50%;
+          padding: 10px;
+          box-shadow: 3px 7px 5px 0px global.$Baby_Blue_Eyes;
+        }
+      }
+      mat-icon {
+        color: global.$Blueberry;
+        font-size: 35px;
+        padding: 20px;
+      }
+      span {
+        color: global.$Blueberry;
+      }
+      .logo-title {
+        color: global.$Cornflower_Blue;
+        margin-left: 25px;
+        font-size: 2.5em;
+        letter-spacing: 0.3em;
+      }
+
+      .router-links {
+        padding: 10px;
+        margin-top: 50px;
+        .link {
+          span {
+            margin-top: 10px;
+          }
+        }
+        .list-item-active {
+          color: #7198f3;
+          text-decoration: none;
+          ::ng-deep {
+            .mat-list-item-content {
+              background: #dbe4fc !important;
+              &:hover {
+                background: #dbe4fc !important;
+              }
+            }
+          }
+        }
+      }
+      mat-list-item {
+        .chevron-button {
+          transition: 300ms ease-in-out;
+          transform: rotate(0deg);
+          right: 0;
+          float: right;
+          position: absolute;
+        }
+
+        .chevron-button.rotated {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+  mat-sidenav-content {
+    .router-outlet {
+      min-height: calc(100% - 150px);
+      padding: 40px;
+      background-color: white;
+      margin-left: 10px;
+      margin-top: 70px;
+    }
+    mat-toolbar {
+      position: fixed;
+      z-index: 1;
+      background-color: white;
+      margin-left: 10px;
+      border-bottom: 1px solid global.$Blueberry;
+      display: grid;
+      grid-template-columns: auto auto;
+      .toolbar-heading {
+        color: global.$Blueberry;
+        font-weight: bolder;
+        letter-spacing: 0.1em;
+        font-size: x-large;
+      }
+      .notification-profile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        right: 0;
+        gap: 30px;
+        margin-right: 50px;
+        img {
+          height: 30px;
+          width: 30px;
+          border-radius: 50%;
+          padding: 3px;
+          border: global.$Blueberry 1px solid;
+          
+        }
+        mat-icon {
+          font-size: 30px;
+          margin-top: -3px;
+          padding: 3px;
+          color: global.$Blueberry;
+          &:hover {
+            color: global.$Baby_Blue_Eyes;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@use "../../../../scss/global";
+mat-card {
+  border-radius: 0;
+  box-shadow: none !important;
+  mat-card-subtitle {
+    color: global.$Blueberry;
+  }
+  mat-card-title {
+    color: global.$Blueberry;
+  }
+  .mat-raised-button {
+    color: global.$Blueberry;
+    border: 1px solid global.$Blueberry;
+    width: 150px;
+    border-radius: 0;
+  }
+}
+mat-form-field {
+  ::placeholder {
+    color: global.$Blueberry;
+  }
+  ::ng-deep .mat-form-field-outline {
+    color: global.$Blueberry !important;
+    //opacity: 1!important;
+  }
+  ::ng-deep .mat-form-field-outline-start {
+    border-radius: 0 !important;
+  }
+  ::ng-deep .mat-form-field-outline-end {
+    border-radius: 0 !important;
+  }
+}
+
+.filter {
+  display: grid;
+  grid-template-columns: 5fr 1fr 1fr;
+  gap: 20px;
+  mat-form-field {
+    width: 100%;
+  }
+  mat-card-content {
+    margin: 0;
+    text-align: center;
+    button {
+      margin-top: 10px;
+    }
+  }
+}
+
+.table-card {
+  border: 1px solid global.$Blueberry;
+  min-height: 20vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}

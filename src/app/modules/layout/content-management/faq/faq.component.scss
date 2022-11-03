@@ -1,0 +1,104 @@
+@use "../common.scss";
+@use "../../../../../scss/global";
+mat-card {
+  border-radius: 0;
+  box-shadow: none !important;
+  mat-card-subtitle {
+    color: global.$Blueberry;
+  }
+  mat-card-title {
+    color: global.$Blueberry;
+  }
+  .mat-raised-button {
+    color: global.$Blueberry;
+    border: 1px solid global.$Blueberry;
+    width: 150px;
+    border-radius: 0;
+  }
+}
+mat-form-field {
+  ::placeholder {
+    color: global.$Blueberry;
+  }
+  ::ng-deep .mat-form-field-outline {
+    color: global.$Blueberry !important;
+    //opacity: 1!important;
+  }
+  ::ng-deep .mat-form-field-outline-start {
+    border-radius: 0 !important;
+  }
+  ::ng-deep .mat-form-field-outline-end {
+    border-radius: 0 !important;
+  }
+}
+
+.title-card {
+  :last-child {
+    border-bottom: 1px solid white;
+  }
+}
+
+.filter {
+  padding: 0;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  mat-form-field {
+    width: 30em;
+  }
+  mat-card-content {
+    margin: 0;
+    text-align: center;
+    button {
+      margin-top: 10px;
+    }
+  }
+}
+
+.content-card {
+  mat-form-field {
+    mat-card-content {
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+      padding: 3px;
+      background-color: global.$Alice_Blue;
+      span {
+        color: global.$Blueberry;
+      }
+      .icon-button-container {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        mat-icon {
+          color: global.$Blueberry;
+        }
+        button {
+          border: 1px solid greenyellow;
+          color: greenyellow;
+        }
+      }
+      .added-date {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .question {
+      padding: 5px;
+      font-size: 1.4em;
+      color: global.$Blueberry;
+      padding-bottom: 10px;
+    }
+    mat-card-subtitle {
+      margin: 0;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      background-color: global.$Alice_Blue;
+      font-size: 1em;
+    }
+    mat-divider {
+      background-color: global.$Blueberry;
+    }
+  }
+}

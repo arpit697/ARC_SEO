@@ -1,0 +1,89 @@
+@use "../../../../scss/global";
+mat-card {
+  border-radius: 0;
+  box-shadow: none !important;
+  mat-card-subtitle {
+    color: global.$Blueberry;
+  }
+  mat-card-title{
+    color: global.$Blueberry;
+  }
+  .mat-raised-button {
+    color: global.$Blueberry;
+    border: 1px solid global.$Blueberry;
+    width: 150px;
+    border-radius: 0;
+  }
+}
+mat-form-field {
+  ::placeholder {
+    color: global.$Blueberry;
+  }
+  ::ng-deep .mat-form-field-outline {
+    color: global.$Blueberry !important;
+    //opacity: 1!important;
+  }
+  ::ng-deep .mat-form-field-outline-start {
+    border-radius: 0 !important;
+  }
+  ::ng-deep .mat-form-field-outline-end {
+    border-radius: 0 !important;
+  }
+}
+.container {
+  .export {
+    padding: 20px;
+    display: grid;
+    justify-content: end;
+    mat-icon {
+      @include global.flex_position(center,center,row);
+      padding: 20px;
+      font-size: 50px;
+      border-radius: 50%;
+      background-color: global.$Blueberry;
+      color: global.$white;
+      transition: 300ms ease-in-out;
+      &:hover {
+        background-color: global.$Baby_Blue_Eyes;
+      }
+    }
+  }
+  .filter-card {
+    border: 1px solid global.$Blueberry;
+    .search-filter {
+      display: grid;
+      grid-template-columns: auto auto;
+      .search-box {
+        display: grid;
+        vertical-align: middle;
+      }
+      .show-select {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+      }
+    }
+    .select-menu {
+      display: flex;
+      mat-card-subtitle,
+      mat-card-content {
+        margin-left: 10px;
+      }
+    }
+    .action-buttons {
+      mat-card-actions {
+        display: flex;
+        gap: 20px;
+        justify-content: end;
+      }
+    }
+  }
+  
+}
+.table-card{
+  border: 1px solid global.$Blueberry;
+  min-height: 20vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}

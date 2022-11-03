@@ -1,0 +1,13 @@
+
+@mixin main-container {
+  min-height:100%;
+  max-height: auto;
+}
+
+@mixin container {
+    padding: 40px;
+    background-color: white;
+    margin-left: 10px;
+    margin-top: 70px;
+    min-height: 100%;
+}

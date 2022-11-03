@@ -1,0 +1,162 @@
+@use "../../../../scss/global";
+mat-card {
+  border-radius: 0;
+  box-shadow: none !important;
+  mat-card-subtitle {
+    color: global.$Blueberry;
+  }
+  mat-card-title {
+    color: global.$Blueberry;
+  }
+  .mat-raised-button {
+    color: global.$Blueberry;
+    border: 1px solid global.$Blueberry;
+    width: 150px;
+    border-radius: 0;
+  }
+}
+mat-form-field {
+  ::placeholder {
+    color: global.$Blueberry;
+  }
+  ::ng-deep .mat-form-field-outline {
+    color: global.$Blueberry !important;
+    //opacity: 1!important;
+  }
+  ::ng-deep .mat-form-field-outline-start {
+    border-radius: 0 !important;
+  }
+  ::ng-deep .mat-form-field-outline-end {
+    border-radius: 0 !important;
+  }
+}
+.container {
+  .nav{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    background-color: global.$Blueberry;
+    margin-bottom: 20px;
+    mat-card{
+      background-color: global.$Blueberry;
+      display: flex;
+      align-items: center;
+      mat-card-title{
+        color: global.$white;
+        font-size: 2.2em;
+      }
+    }
+  }
+  .filter-card {
+    border: 1px solid global.$Blueberry;
+    .search-filter {
+      display: grid;
+      grid-template-columns: auto auto;
+      .search-box {
+        display: grid;
+        vertical-align: middle;
+      }
+      .show-select {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+      }
+    }
+    .select-menu {
+      display: flex;
+      mat-card-subtitle,
+      mat-card-content {
+        margin-left: 10px;
+      }
+    }
+    .action-buttons {
+      mat-card-actions {
+        display: flex;
+        gap: 20px;
+        justify-content: end;
+      }
+    }
+  }
+}
+.table-card {
+  border: 1px solid global.$Blueberry;
+  min-height: 20vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .main-container {
+    .container {
+        .total-earning{
+            mat-card{
+                @include global.mat-card-reset;
+                padding: 20px;
+                display: flex;
+                justify-content: space-between;
+                background-color: global.$Blueberry;
+                color: global.$white;
+                align-items: center;
+            }
+        }
+      .filters {
+        @include global.mat-card-reset;
+        border: 1px solid global.$Blueberry;
+        padding: 20px;
+        margin-top: 50px;
+        .search-field {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 20px;
+          @include global.mat-form-field-outline;
+          mat-form-field {
+            width: 80%;
+          }
+          .show {
+            button {
+              height: 60px;
+              width: 100px;
+              border: 1px solid global.$Blueberry;
+              border-radius: 0;
+              margin-top: -15px;
+            }
+          }
+        }
+       .short-status{
+           display: flex;
+           gap: 30px;
+        .short-by {
+            margin-top: 50px;
+            button {
+              height: 60px;
+              width: 100px;
+              border: 1px solid global.$Blueberry;
+              border-radius: 0;
+              margin-top: -15px;
+            }
+          }
+          .status {
+              margin-top: 50px;
+              button {
+                height: 60px;
+                width: 100px;
+                border: 1px solid global.$Blueberry;
+                border-radius: 0;
+                margin-top: -15px;
+              }
+            }
+       }
+        .actions {
+          padding: 10px;
+          margin-top: 50px;
+          mat-card-actions {
+            display: flex;
+            gap: 30px;
+            justify-content: flex-end;
+          }
+        }
+      }
+    }
+  }
+   */

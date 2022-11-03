@@ -1,0 +1,35 @@
+<!-- <div class="container">
+    <div class="card">
+        <mat-card class="card-one">
+            <div class="title">
+                <mat-card-title>ARC</mat-card-title>
+            </div>
+            <div class="sub-title">
+                <mat-card-subtitle>Welcome To ARC</mat-card-subtitle>
+            </div>
+        </mat-card>
+    </div>
+    <div class="card">
+        <mat-card class="card-two">
+            <router-outlet></router-outlet>
+        </mat-card>
+    </div>
+</div> -->
+
+<mat-card class="card-container" >
+    <mat-card class="left-card">
+        <div class="left-card-inner">
+            <mat-card style="border-radius: 10px;"> <!--edit-->
+            <img mat-card-image src="../../../assets/107385-login.gif" alt="Login Animation" *ngIf="_router.url === '/login'" >
+            <img mat-card-image src="../../../assets/118046-lf20-oahmox5rjson.gif" alt="Sign Up Animation" *ngIf="_router.url === '/sign-up'">
+            <img mat-card-image src="../../../assets/111653-forgot-password.gif" alt="Forgot Password Animation" *ngIf="_router.url === '/forgot-password'">
+            <img mat-card-image src="../../../assets/63004-profile-password-unlock.gif" alt="Reset Password Animation" *ngIf="_router.url === '/reset-password'">
+            <!-- <mat-card-title>ARC</mat-card-title>
+            <mat-card-subtitle>Welcome To ARC</mat-card-subtitle> -->
+            </mat-card>
+        </div>
+    </mat-card>
+    <mat-card class="right-card">
+        <router-outlet></router-outlet>
+    </mat-card>
+</mat-card>

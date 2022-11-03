@@ -1,0 +1,76 @@
+@use "../../../../scss/global";
+
+.detail-card {
+  @include global.mat-card-reset;
+  mat-card-content {
+    display: grid;
+    grid-template-columns: calc(100% / 3) auto;
+    align-items: center;
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      height: 180px;
+      width: 180px;
+      margin-top: 10px;
+      border-radius: 50%;
+    }
+    .detail {
+      ul {
+        li {
+          list-style: none;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          font-size: 1.5em;
+          color: global.$Blueberry;
+          span {
+            color: global.$Baby_Blue_Eyes;
+          }
+        }
+      }
+    }
+  }
+}
+.change-pass-card {
+  @include global.mat-card-reset;
+  mat-card-content {
+    @include global.mat-form-field-outline;
+    @include global.mat-form-field-label;
+    .title {
+      mat-card-title {
+        color: global.$Blueberry;
+        font-size: 2em;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+    }
+    mat-form-field {
+      width: 100%;
+    }
+    .current-pass {
+      display: grid;
+      display: grid;
+      grid-template-columns: 40% auto;
+      .field {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+    }
+    .reset-pass {
+      display: grid;
+      grid-template-columns: 40% 40%;
+      gap: 20px;
+      .field {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  mat-card-actions {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
