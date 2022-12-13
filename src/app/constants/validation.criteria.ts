@@ -1,3 +1,4 @@
+/**@discription criteria for validations */
 export const VALIDATION_CRITERIA = {
     emailMaxLength: 100,
     passwordMinLength: 8,
